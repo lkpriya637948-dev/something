@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Love Puzzle 💕</title>
+
+<style>
+body{
+    text-align:center;
+    font-family:Arial;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding-top:80px;
+}
+
+h2{
+    color:white;
+    font-size:30px;
+}
+
+.photo-frame{
+    margin-top:30px;
+    display:inline-block;
+    padding:15px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+    0%{ transform: translateY(0px); }
+    50%{ transform: translateY(-10px); }
+    100%{ transform: translateY(0px); }
+}
+
+button{
+    margin-top:40px;
+    padding:10px 25px;
+    font-size:16px;
+    border:none;
+    border-radius:20px;
+    background:#ff4d6d;
+    color:white;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Our Special Memory 💖</h2>
+
+<div class="photo-frame">
+   <img src="love.jpg.jpeg" width="300">
+   <img src="love1.jpg.jpeg" width="300">
+   <img src="love2.jpg.jpeg" width="300"> 
+</div>
+
+<br>
+
+<button onclick="next()">click ➡️</button>
+
+<script>
+function next(){
+    window.location.href="final.html";
+}
+</script>
+
+</body>
+</html>
