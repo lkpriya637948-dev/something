@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question 3</title>
+
+<style>
+body{
+    text-align: center;
+    padding-top: 150px;
+    font-family: Arial;
+    background-color: white;   /* White Background */
+}
+
+h1{
+    color: #333333;   /* Dark text for visibility */
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+
+button:hover{
+    background-color: #ff4d6d;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>How many beautiful years have we completed together? 💖</h1>
+
+<button onclick="wrong()">1 Year</button><br><br>
+<button onclick="wrong()">2 Years</button><br><br>
+<button onclick="correct()">3 Years</button><br><br>
+<button onclick="wrong()">5 Years</button>
+
+<script>
+
+function correct(){
+    window.location.href="puzzle.html";
+}
+
+function wrong(){
+    alert("Oops 😉 Think again!");
+}
+
+</script>
+
+</body>
+</html>
