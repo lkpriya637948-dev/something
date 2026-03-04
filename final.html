@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy 3 Years Anniversary 💖</title>
+
+<style>
+body{
+    margin:0;
+    overflow:hidden;
+    background: linear-gradient(to top,#ff758c,#ff7eb3);
+    text-align:center;
+    font-family:Arial;
+}
+
+h1{
+    color:white;
+    margin-top:200px;
+    font-size:42px;
+    position:relative;
+    z-index:2;
+}
+
+/* Hearts Style */
+.heart{
+    position:absolute;
+    bottom:-50px;
+    font-size:20px;
+    animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-1000px);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Happy 3 Years Anniversary Mama💕</h1>
+
+<p>
+    Three Beautiful Years Of Love And Happiness.
+    Thank You For Being MY Forever 💖
+</p>
+
+<script>
+function createHeart(){
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.fontSize = (Math.random() * 20 + 20) + "px";
+    heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },6000);
+}
+
+setInterval(createHeart,300);
+</script>
+
+</body>
+</html>
